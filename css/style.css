@@ -18,11 +18,10 @@ a:hover {
 /* Hamburger - Edited from https://codepen.io/anon/pen/pYvvEG */
 
 nav {
-/*  background-color: #fff;*/
   position: absolute;
-  width: 80%;
-  padding: 0.8em 10% 0 10%;
-/*  z-index: 3;*/
+  z-index: 3;
+  padding: 0.8em 6% 0 6%;
+  width: 88%;
 }
 
 nav #home {
@@ -36,8 +35,8 @@ nav #home {
 
 nav #home img {
   position: absolute;
-  top: 29%;
-  left: 10%;
+  top: 20px;
+  left: 6%;
   width: 40px;
   height: auto;
 }
@@ -45,13 +44,13 @@ nav #home img {
 nav #home #home-title {
   position: relative;
   display: inline-block;
-  left: 50px;
+  left: 48px;
   font-size: 1.2em;
 }
 
 nav ul {
-  margin: 0;
   padding: 0 7%;
+  margin: 0;
   border-radius: 0 0 1em 1em;
   float: right;
   text-align: center;
@@ -76,8 +75,8 @@ nav .menu-btn:hover {
 
 nav #menu {
   position: fixed;
-  right: 10%;
-  top: 10%;  
+  right: 6%;
+  top: 75px;  
   clear: both;
   max-height: 0;
   transition: max-height .2s ease-out;
@@ -89,7 +88,7 @@ nav .menu-icon {
 /*  float: right;*/
 /*  position: relative;*/
   position: fixed;
-  right: 10%;
+  right: 6%;
   padding: 18px 0.5em;
   margin: 10px 0;
   user-select: none;
@@ -161,7 +160,7 @@ header {
   width: 80%;
   margin: 0 auto;
   position: relative;
-  padding: 13% 10% 0.5em 10%;
+  padding: 13% 8% 0.5em 0;
 }
 
 header a {
@@ -191,7 +190,8 @@ header h1 {
 
 #portfolio {
   width: 80%;
-  padding: 4% 10%;
+  margin: auto;
+  padding: 4% 8% 1em 0;
   grid-template-columns: none;
 }
 
@@ -205,9 +205,9 @@ header h1 {
 
 #about-me {
   width: 80%;
-  margin: 0 auto;
+  margin: auto;
   position: relative;
-  padding: 5% 10%;
+  padding: 4% 8% 1em 0;
 }
 
 #about-me h2 {
@@ -228,7 +228,9 @@ header h1 {
 }
 
 #about-container {
-  padding: 0em 10% 0em 10%;
+  padding: 0 8% 0 0;
+  margin: auto;
+  width: 80%;
   grid-template-columns: none;
   font-size: 16px;
   line-height: 1.45em;
@@ -313,8 +315,10 @@ header h1 {
 
 footer {
   width: 80%;
-  padding: 2em 10% 1em 10%;
-}
+  margin: auto;
+  padding: 2em 8% 1em 0;
+} 
+/* add a 8% padding-right for hamburger*/
 
 footer .contact {
   margin: 0.3em; 
@@ -356,7 +360,7 @@ footer #signature {
     position: fixed;
     padding: 3% 2.5%;
     width: 95%;
-/*    background-color: rgba(251, 251, 251, 0.9);*/
+    z-index: 0;
   }
   
   nav ul {
@@ -408,6 +412,7 @@ footer #signature {
     min-width: 48px;
     max-width: 100px;
     height: auto;
+    top: auto;
   }
 
   nav #home #home-title {
@@ -422,8 +427,15 @@ footer #signature {
   
   header {
     margin: 0 auto;
-    padding: 10% 0 1em 0;
+    padding: 10% 0 0 0;
     width: 58%;
+  }
+  
+  header h1 {
+    font-size: 42px;
+    line-height: 1.25em;
+    max-width: 30em;
+    padding: 0;
   }
 
   header p {
@@ -493,16 +505,11 @@ footer #signature {
 /*    padding-right: 1.4em;*/
     width: 96%;
   }
-
-  header h1 {
-    font-size: 42px;
-    line-height: 1.25em;
-    max-width: 30em;
-    padding: 0;
-  }
   
   footer {
     text-align: center;
+    margin: auto;
+    padding: 1em 0;
   }
   
   footer .contact {
