@@ -1,0 +1,511 @@
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #fbfbfb;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: #3fb3c1;
+}
+
+a:hover {
+  color: #f80;
+  transition: color .27s ease-out;
+}
+
+/* Hamburger - Edited from https://codepen.io/anon/pen/pYvvEG */
+
+nav {
+/*  background-color: #fff;*/
+  position: absolute;
+  width: 80%;
+  padding: 0.8em 10% 0 10%;
+/*  z-index: 3;*/
+}
+
+nav #home {
+  display: block;
+  float: left;
+  padding-top: 18px;
+  text-decoration: none;
+  color: #000;
+  width: 100%;
+}
+
+nav #home img {
+  position: absolute;
+  top: 29%;
+  left: 10%;
+  width: 40px;
+  height: auto;
+}
+
+nav #home #home-title {
+  position: relative;
+  display: inline-block;
+  left: 50px;
+  font-size: 1.2em;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0 7%;
+  border-radius: 0 0 1em 1em;
+  float: right;
+  text-align: center;
+  list-style: none;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+nav li a {
+  font-size: 18.5px;
+  display: block;
+  padding: 1em;   
+  margin: 0.3em;
+  text-decoration: none;
+  color: #000;
+}
+
+nav li a:hover,
+nav .menu-btn:hover {
+  color: #f80;
+}
+
+nav #menu {
+  position: fixed;
+  right: 10%;
+  top: 10%;  
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+nav .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+/*  float: right;*/
+/*  position: relative;*/
+  position: fixed;
+  right: 10%;
+  padding: 18px 0.5em;
+  margin: 10px 0;
+  user-select: none;
+  background-color: rgba(255, 136, 0, 0.3);
+}
+
+nav .menu-icon:hover {
+  background-color: rgba(255, 136, 0, 1);
+  transition: .27s ease-out;
+}
+
+nav .menu-icon .navicon {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+nav .menu-icon .navicon:before,
+nav .menu-icon .navicon:after {
+  background: #fff;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+nav .menu-icon .navicon:before {
+  top: 5px;
+}
+
+nav .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+nav .menu-btn {
+  display: none;
+}
+
+nav .menu-btn:checked ~ #menu {
+  max-height: 240px;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+nav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+header {
+/*  background-color: #fff;*/
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 13% 10% 0.5em 10%;
+}
+
+header a {
+  padding-bottom: 0.05em;
+}
+
+header a:hover, 
+#about-me a:hover, 
+#about-container a:hover {
+  border-bottom: 2px solid #f80;
+  color: #f80;
+  transition: color .27s ease-out, border .1s ease-out;
+}
+
+header p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+header h1 {
+  font-size: 34.7px;
+  line-height: 1.25em;
+  font-weight: 600;
+  margin: 0;
+  padding: 0.8em 0 0.5em 0;
+}
+
+#portfolio {
+  width: 80%;
+  padding: 4% 10%;
+  grid-template-columns: none;
+}
+
+#portfolio:hover {
+  /* shadow, transparency */
+}
+
+#portfolio img {
+  width: 100%;
+}
+
+#about-me {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+  padding: 5% 10%;
+}
+
+#about-me h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #555;
+}
+
+#about-me p, #about-me ul {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+/* adapted from https://stackoverflow.com/questions/13840403/edit-line-thickness-of-css-underline-attribute */
+
+#about-me b {
+  box-shadow: inset 0 -3px 0 #fbfbfb, inset 0 -11px 0 #f6d967;
+  font-weight: 400;
+}
+
+#about-container {
+  padding: 0em 10% 0em 10%;
+  grid-template-columns: none;
+  font-size: 16px;
+  line-height: 1.45em;
+}
+
+#about-container ul {
+  margin: 0;
+  padding-left: 0;
+}
+
+#about-container li {
+  list-style: none;
+}
+
+#about-container h4 {
+  margin-top: 0.5em;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14.5px;
+  color: #555;
+  border-left: 3px solid #555;
+  padding-left: 10px;
+}
+
+#about-container a {
+  padding-bottom: 0.05em;
+}
+
+.about-column {
+  padding: 0.5em 0;
+}
+
+#about-container .experience {
+  padding: 0.5em 0;
+}
+
+#about-container .role,
+#about-container .award, 
+#about-container .paper {
+  padding: 0.2em 0;
+  font-size: 17.5px;
+  color: #222;
+  font-weight: 600;
+}
+
+#about-container .major {
+  color: #777;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+#about-container .affiliation {
+  font-size: 16px;
+  padding: 0.2em 0;
+} 
+
+#about-container .location {
+  padding: 0.2em 0;
+  color: #aaa;
+  font-size: 15px;
+}
+
+#about-container .author b{
+  font-weight: 400;
+  color: #777;
+}
+
+#about-container .duration, 
+#about-container .author {
+  padding: 0.05em 0 0.5em;
+  color: #ccc;
+  font-size: 14.3px;
+  line-height: 1.6em;
+}
+
+#about-container .award-title, 
+#about-container .pub-date{
+  display: inline;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer {
+  width: 80%;
+  padding: 2em 10% 1em 10%;
+}
+
+footer .contact {
+  margin: 0.3em; 
+  text-align: center;
+  font-size: 18.5px;
+  height: 45px;
+}
+
+footer .contact a {
+  color: #000;
+  display: inline-block;
+  padding: 0.5em;
+}
+
+footer .contact a:hover {
+  color: #f80;
+  transition: color .27s ease-out;
+}
+
+footer #signature {
+  margin-top: 1.8em;
+  text-align: center;
+  font-size: 16px;
+}
+
+@media (max-width: 30em) and (min-width: 20em) {
+  header h1 {
+    font-size: 28px;
+  }
+  
+  header {
+    padding-top: 25%;
+  }
+}
+
+/* 48em = 768px */
+@media (min-width: 48em) { 
+  nav {
+    position: fixed;
+    padding: 3% 2.5%;
+    width: 95%;
+/*    background-color: rgba(251, 251, 251, 0.9);*/
+  }
+  
+  nav ul {
+    background-color: transparent;
+    padding: 0;
+    text-align: right;
+/*    max-width: 18%;*/
+  }
+
+  nav li {
+    padding: 0.25em;
+    margin-bottom: 0.05em;
+  }
+
+  nav li a {
+    padding: 0.4em 0.5em 0.4em 0.5em;
+    color: #000;
+    font-size: .9em;
+  }
+
+  nav #menu {
+    position: relative;
+    top: 0;
+    right: 0;
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  nav .menu-icon {
+    display: none;
+  }
+  
+  nav #home {
+    display: block;
+    float: left;
+    text-decoration: none;
+    color: #000;
+    padding: 0.25em;
+    max-width: 17%;
+  }
+
+  nav #home img {
+    float: left;
+    display: inline-block;
+    position: relative;
+    left: 0;
+    width: 5vw;
+    min-width: 48px;
+    max-width: 100px;
+    height: auto;
+  }
+
+  nav #home #home-title {
+    position: relative;
+    display: inline-block;
+    left: 0.6vw;
+    font-size:calc(11px + 1.2vw);
+    top: 0.7vw;
+    line-height: 125%;
+    max-width: 9%;
+  }
+  
+  header {
+    margin: 0 auto;
+    padding: 10% 0 1em 0;
+    width: 58%;
+  }
+
+  header p {
+    width: 75%;
+    min-width: 20em;
+  }
+  
+  header p, 
+  #about-me p, 
+  #about-me ul {
+    font-size: 20px;
+    line-height: 1.6em;
+    max-width: 60em;
+  }
+  
+  #portfolio {
+    margin: auto;
+    width: 58%;
+    padding: 4.5vw 0 2em 0;
+  }
+  
+  #about-me {
+    margin: auto;
+    padding: 4.5vw 0% 1em 0%;
+    max-width: 58%;
+  }
+  
+  #about-me h2 {
+    font-size: 32px;
+    margin: 0;
+    margin-bottom: .85em;
+  }
+  
+  #about-container {
+    margin: auto;
+    max-width: 58%;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  #about-container h4 {
+    font-size: 16px;
+  }
+  
+  #about-container .role, 
+  #about-container p {
+    font-size: 20px;
+  }
+  
+  #about-container .paper, 
+  #about-container .award {
+    font-size: 18.7px;
+    line-height: 25px;
+  }
+  
+  #about-container .award-title, 
+  #about-container .pub-date {
+    font-size: 17.8px;
+  }
+  
+  #about-container .affiliation {
+    font-size: 17px;
+  }
+  
+  .about-column {
+/*    padding-right: 1.4em;*/
+    width: 96%;
+  }
+
+  header h1 {
+    font-size: 42px;
+    line-height: 1.25em;
+    max-width: 30em;
+    padding: 0;
+  }
+  
+  footer {
+    text-align: center;
+  }
+  
+  footer .contact {
+    display: inline-block;
+  }
+}
