@@ -59,10 +59,11 @@ nav #home #home-title {
 nav li a {
   font-size: 24px;
   display: block;
-  padding: 1em;   
-  margin: 0.3em;
+  padding: 3vh;   
+  margin: 3px;
   text-decoration: none;
   color: #000;
+  transform: translateY(30vh);
 }
 
 nav li a:hover,
@@ -73,23 +74,24 @@ nav .menu-btn:hover {
 nav #menu {
   margin: 0;
   padding: 0;
-/*  float: right;*/
-  text-align: center;
   list-style: none;
+  overflow: hidden;
   background-color: rgba(255, 255, 255, 0.9);
 
   position: fixed;
   right: 0;
   top: 0;
+  text-align: center;
+/*    float: right;*/
   
-/*  clear: both;*/
+  clear: both;
+  height: 0;
   max-height: 0;
-  overflow: hidden;
-  
-  transition: max-height .2s ease-out, padding .2s ease-out;
   
   width: 100vw;
   z-index: -3;
+  
+  transition: max-height .2s ease-out, height .2s ease-out;
 }
 
 nav .menu-icon {
@@ -144,7 +146,7 @@ nav .menu-btn:checked ~ #menu {
 /*  max-height: 240px;*/
   max-height: 100vh;
   height: 100vh;
-  padding: 50vw 0;
+/*  padding: 39vh 0;*/
 }
 
 nav .menu-btn:checked ~ .menu-icon {
@@ -444,6 +446,7 @@ footer #signature {
     padding: 0.4em 0.5em 0.4em 0.5em;
     color: #000;
     font-size: 18px;
+    transform: translateY(0%);
   }
 
   nav #menu {
@@ -460,15 +463,18 @@ footer #signature {
     max-height: none;
     
     width: auto;
+    height: auto;
     max-width: 18%;
   }
   
+/*
   nav .menu-btn:checked ~ #menu {
-/*  max-height: 240px;*/
+  max-height: 240px;
     max-height: none;
     height: auto;
     padding: 0;
   }
+*/
 
   nav .menu-icon {
     display: none;

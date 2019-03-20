@@ -115,9 +115,16 @@
         <span class="navicon" />
       </label>
       <ul id="menu">
-        <li><a href="#portfolio" onclick="document.getElementById('menu-btn').click();">Portfolio</a></li>
-        <li><a href="#about"  onclick="document.getElementById('menu-btn').click();">About</a></li>
-        <li><a href="resume.pdf" target="_blank">Résumé</a></li>
+        <li>
+          <a href="#portfolio" onclick="document.getElementById('menu-btn').checked=false;">Portfolio</a>
+        </li>
+        <li>
+<!--          <a href="#about"  onclick="document.getElementById('menu-btn').click();">About</a>-->
+          <a href="#about"  onclick="document.getElementById('menu-btn').checked=false;">About</a>
+        </li>
+        <li>
+          <a href="resume.pdf" target="_blank">Résumé</a>
+        </li>
       </ul>
     </nav>
 
