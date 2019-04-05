@@ -105,7 +105,7 @@ nav .menu-icon {
 /*  position: relative;*/
   position: fixed;
   right: 7%;
-  padding: 18px 0.5em;
+  padding: 19px 0.5em;
   margin: 10px 0;
   user-select: none;
 /*  background-color: rgba(255, 136, 0, 0.3);*/
@@ -202,11 +202,12 @@ header p {
 
 header h1 {
   color: #000;
-  font-size: 37px;
+/*  font-size: 37px;*/
+  font-size: calc(24px + 1vw);
   line-height: 1.45em;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
-  padding: 0.8em 0 0.5em 0;
+  padding: .8em 0 .5em 0;
 }
 
 /* project */
@@ -215,11 +216,11 @@ header h1 {
   width: 86%;
   margin: auto;
   padding: 5% 0;
-/*  grid-template-columns: none;*/
 }
 
 .project-info {
   padding: 1.3em 0;
+/*  display: flex;*/
 }
 
 .project-img img {
@@ -243,7 +244,7 @@ header h1 {
   right: 0;
   bottom: 0;
   left: 0;
-  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.15);
   opacity: 0;
   transition: opacity .2s ease-out;
   border-radius: 1em;
@@ -278,9 +279,10 @@ header h1 {
 .project-description {
   margin: 0;
   padding: 0;
-  font-size: 16px;
-  line-height: 1.65em;
+  line-height: 1em;
   color: #9c9c9c;
+  font-size: 16px;
+  line-height: 1.55em;
 }
 
 
@@ -359,6 +361,22 @@ header h1 {
   font-weight: 500;
 }
 
+#about-container .button {
+  display: inline-block;
+  border: 1px solid #999;
+  background: #eee;
+  padding: 0 6px;
+  color: #999;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-right: 3px;
+}
+  
+#about-container .button:hover {
+  border: 1px solid #333;
+  box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.15);
+}
+
 #about-container .major {
   color: #777;
   font-size: 17px;
@@ -430,9 +448,10 @@ footer #signature {
   color: #333;
 }
 
-@media (max-width: 30em) and (min-width: 20em) {
+@media (max-width: 30em) and (min-width: 15em) {
   header h1 {
-    font-size: 32px;
+/*    font-size: 32px;*/
+    font-size: calc(18px + 1vw);
   }
   
   header {
@@ -527,18 +546,19 @@ footer #signature {
   
   header {
     margin: 0 auto;
-    padding: 10% 0 0 0;
+    padding: 8% 0 0 0;
     width: 58%;
   }
   
   header h1 {
-    font-size: 42px;
+/*    font-size: 42px;*/
+    font-size: calc(30px + 0.835vw);
     max-width: 30em;
     padding: 0;
   }
 
   header p {
-    width: 75%;
+    width: 76%;
     min-width: 20em;
   }
   
@@ -558,20 +578,21 @@ footer #signature {
   #portfolio {
     margin: auto;
     width: 58%;
-    padding: 4.5vw 0 2em 0;
+    padding: 3vw 0 2em 0;
   }
   
   .project-title {
-    font-size: 32px;
+    font-size: calc(15px + .95vw);
   }
   
   .project-description {
-    font-size: 20px;
+    font-size: calc(16px + 0.2vw);
+    line-height: 1.75em;
   }
-  
+    
   #about-me {
     margin: auto;
-    padding: 4.5vw 0% 1em 0%;
+    padding: 4vw 0% 1em 0%;
     max-width: 58%;
   }
   
@@ -581,30 +602,13 @@ footer #signature {
     margin-bottom: .85em;
   }
   
-  #portfolio {
-/*
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-*/
-    margin: 0 auto;
-    column-count: 2;
-    column-gap: 15px; <!-- 每欄間隔 -->
-    column-fill: auto;
-  }
-  
-  .portfolio-column {
-    width: 90%;
-    break-inside: avoid;
-    word-wrap: break-word;
-    display: block;
-  }
-  
   #about-container {
     margin: auto;
     max-width: 58%;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-gap: 2vw;
   }
   
   #about-container h4 {
@@ -631,11 +635,6 @@ footer #signature {
     font-size: 17px;
   }
   
-  .about-column {
-/*    padding-right: 1.4em;*/
-    width: 96%;
-  }
-  
   footer {
     text-align: center;
     margin: auto;
@@ -646,3 +645,5 @@ footer #signature {
     display: inline-block;
   }
 }
+
+
