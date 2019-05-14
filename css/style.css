@@ -6,6 +6,10 @@ body {
   color: #333;
 }
 
+h3 {
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
   color: #f80;
@@ -189,7 +193,8 @@ header a {
 
 header a:hover, 
 #about-me a:hover, 
-#about-container a:hover {
+#about-container a:hover, 
+#contact a:hover {
   border-bottom: 2px solid #333;
   color: #333;
   transition: color .2s ease-out, border .1s ease-out;
@@ -215,7 +220,7 @@ header h1 {
 #portfolio {
   width: 86%;
   margin: auto;
-  padding: 5% 0;
+  padding: 4% 0;
 }
 
 .project-info {
@@ -288,20 +293,21 @@ header h1 {
 
 /* ------- */
 
-#about-me {
+#about-me, #contact {
   width: 86%;
   margin: auto;
   position: relative;
   padding: 4% 0 1em 0;
 }
 
-#about-me h2 {
+h2 {
   font-size: 28px;
   font-weight: 600;
   color: #555;
 }
 
-#about-me p, #about-me ul {
+#about-me p, #about-me ul,
+#contact p {
   font-size: 16px;
   line-height: 1.65em;
 }
@@ -365,9 +371,9 @@ header h1 {
   display: inline-block;
   border: 1px solid #999;
   background: #eee;
-  padding: 0 6px;
+  padding: 0 4px;
   color: #999;
-  font-size: 14px;
+  font-size: 13px;
   border-radius: 5px;
   margin-right: 3px;
 }
@@ -564,7 +570,8 @@ footer #signature {
   
   header p, 
   #about-me p, 
-  #about-me ul {
+  #about-me ul,
+  #contact p {
     font-size: 20px;
     line-height: 1.7em;
     max-width: 60em;
@@ -578,7 +585,7 @@ footer #signature {
   #portfolio {
     margin: auto;
     width: 58%;
-    padding: 3vw 0 2em 0;
+    padding: 4vw 0 2em 0;
   }
   
   .project-title {
@@ -590,13 +597,14 @@ footer #signature {
     line-height: 1.75em;
   }
     
-  #about-me {
+  #about-me,
+  #contact {
     margin: auto;
     padding: 4vw 0% 1em 0%;
     max-width: 58%;
   }
   
-  #about-me h2 {
+  h2 {
     font-size: 32px;
     margin: 0;
     margin-bottom: .85em;
@@ -612,7 +620,7 @@ footer #signature {
   }
   
   #about-container h4 {
-    font-size: 16px;
+    font-size: 17.5px;
   }
   
   #about-container .role, 
