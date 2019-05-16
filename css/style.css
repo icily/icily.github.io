@@ -236,7 +236,7 @@ header h1 {
 }
 
 .project:hover {
-  transition: height .2s ease-out, padding .2s ease;
+  transition: height .3s ease-out, padding .3s ease;
   padding: 45px 7%;
 }
 
@@ -281,13 +281,13 @@ header h1 {
   padding: 16px 7%;
   position: relative;
   background-color: #fff;
-  border-top: 1px solid #eee;
-  border-right: 1px solid #eee;
-  border-left: 1px solid #eee;
+  border-top: 1px solid #e5e5e5;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
 }
 
 .last-item {
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .other-project:hover {
@@ -579,7 +579,7 @@ footer #signature {
 /* Modal Content/Box */
 .modal-popup {
   position: relative;
-  margin: 20vh auto 20px auto;
+  margin: 15vh auto 20px auto;
   width: 75%;
   max-width: 600px;
   z-index: 10;
@@ -671,7 +671,6 @@ footer #signature {
     padding: 0;
     margin: 0;
     text-align: right;
-    
     position: relative;
     top: 0;
 /*    right: 0;*/
@@ -712,8 +711,8 @@ footer #signature {
     position: relative;
     left: 0;
     width: 5vw;
-    min-width: 48px;
-    max-width: 100px;
+    min-width: 40px;
+    max-width: calc(40px + 1vw);
     height: auto;
     top: auto;
   }
@@ -722,9 +721,9 @@ footer #signature {
     position: relative;
     display: inline-block;
     left: 0.6vw;
-    font-size:calc(11px + 1.2vw);
-    top: 0.72vw;
-    line-height: 123%;
+    font-size:calc(15px + .5vw);
+    top: 0.38vw;
+    line-height: 130%;
     max-width: 9%;
   }
   
@@ -813,6 +812,10 @@ footer #signature {
 
   .other-project .project-role {
     font-size: 14.5px;
+  }
+  
+  .modal-popup{ 
+    margin: 20vh auto 20px auto;
   }
 
   
