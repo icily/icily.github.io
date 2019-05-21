@@ -42,9 +42,9 @@ nav #home {
 
 nav #home span {
   position: absolute;
-  top: 20px;
-  left: 7%;
-  width: 40px;
+  top: 23px;
+  left: 7.5%;
+  width: 35px;
   height: auto;
 }
 
@@ -57,10 +57,10 @@ nav #home:hover {
 nav #home #home-title {
   position: relative;
   display: inline-block;
-  left: 46px;
+  left: 42px;
 /*  font-size: 1.2em;*/
-  font-size: 22.5px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
   letter-spacing: .25px;
 }
 
@@ -229,15 +229,19 @@ header h1 {
 }
 
 .project {
-  width: 86%;
+/*  width: 86%;*/
   display: block;
-  padding: 30px 7%;
+  padding: 28px 7%;
   position: relative;
 }
 
 .project:hover {
   transition: height .3s ease-out, padding .3s ease;
-  padding: 45px 7%;
+  padding: 40px 7%;
+}
+
+.project-cta {
+  font-size: 15px;
 }
 
 .project-role {
@@ -260,7 +264,7 @@ header h1 {
   height: auto;
   position: absolute;
   bottom: 0;
-  right: 1px;
+  right: 5px;
 }
 
 .pinchfun {
@@ -276,7 +280,7 @@ header h1 {
 }
 
 .other-project {
-  width: 86%;
+/*  width: 86%;*/
   display: block;
   padding: 16px 7%;
   position: relative;
@@ -471,7 +475,7 @@ h2 {
   box-shadow: 0 0px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
-.resume-cfa {
+.resume-cta {
   display: inline-block;
   border: 1px solid #f80;
   padding: 2px 10px !important;
@@ -481,7 +485,7 @@ h2 {
   margin-right: 3px;
 }
 
-.resume-cfa:hover {
+.resume-cta:hover {
   background: rgba(255, 136, 0, 0.05);
   border: 1px solid #f80 !important;
   color: #f80 !important;
@@ -550,9 +554,9 @@ footer .contact a:hover {
 }
 
 footer #signature {
-  margin-top: 1.8em;
+  margin-top: 1.3em;
   text-align: center;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 1.6em;
 }
 
@@ -712,7 +716,7 @@ footer #signature {
     left: 0;
     width: 5vw;
     min-width: 40px;
-    max-width: calc(40px + 1vw);
+    max-width: calc(35px + 1vw);
     height: auto;
     top: auto;
   }
@@ -721,8 +725,8 @@ footer #signature {
     position: relative;
     display: inline-block;
     left: 0.6vw;
-    font-size:calc(15px + .5vw);
-    top: 0.38vw;
+    font-size:calc(15px + .45vw);
+    top: 0.25vw;
     line-height: 130%;
     max-width: 9%;
   }
@@ -735,7 +739,7 @@ footer #signature {
   
   header h1 {
 /*    font-size: 42px;*/
-    font-size: calc(30px + 0.835vw);
+    font-size: calc(24px + 1.23vw);
     max-width: 30em;
     padding: 0;
   }
@@ -761,17 +765,19 @@ footer #signature {
   
   .portfolio {
     margin: auto;
-    width: 67.5%;
-    padding: 4vw 0 2em 0;
+    width: 64%;
+  }
+  
+  .portfolio h2 {
+    padding-left: 5%;
   }
   
   .project {
-    width: 86%;
-    padding: 30px 7%;
+    padding: 30px 5%;
   }
   
   .project:hover {
-    padding: 45px 7%;
+    padding: 45px 5%;
   }
   
   .project-image {
@@ -782,11 +788,12 @@ footer #signature {
   }
   
   .project-name {
-    font-size: 26px;
+    font-size: calc(20px + .4vw);
+    line-height: 1.45em;
   }
   
   .project-role {
-    font-size: 16px;
+    font-size: calc(14px + .2vw);
   }
   
   .first-item {
@@ -798,20 +805,20 @@ footer #signature {
   }
   
   .other-project {
-    padding: 20px 7%;
+    padding: 20px 5%;
   }
   
   .other-project:hover {
-    padding: 23px 7%;
+    padding: 23px 5%;
   }
   
   .other-project .project-name {
-    font-size: 22px;
-    line-height: 30px;
+    font-size: calc(20px + .2vw);
+    line-height: 1.45em;
   }
 
   .other-project .project-role {
-    font-size: 14.5px;
+    font-size: calc(14px + .15vw);
   }
   
   .modal-popup{ 
