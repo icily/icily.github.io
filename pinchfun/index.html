@@ -1,0 +1,454 @@
+<!-- Design and hand-coded by
+        _
+       /  |_ . _ \_/   
+       \_ | )|(_| |(_| :D 
+-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140784664-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-140784664-1');
+  </script>
+
+    <title>Designing a child-parent cooperative game for fine motor skills training - ChiaYu Chen</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" />
+    <meta name="description" content="ChiaYu Chen is an HCI Researcher and Interaction Designer based in Taiwan, with passion in constructing meaningful interaction between human and technologies, in digital and physical world." />
+    <meta name="keywords" content="UX designer, user researcher, UX researcher, prototyper, interaction designer, HCI researcher, human-computer interaction" />
+    <meta name="author" content="ChiaYu Chen" />
+    <meta property="og:title" content="Designing a child-parent cooperative game for fine motor skills training - ChiaYu Chen" />
+    <meta property="og:url" content="chiayu.me" />
+    <meta property="og:image" content="#" />
+    <meta property="og:site_name" content="ChiaYu Chen - HCI Researcher" />
+    <meta property="og:description" content="a cooperative game to support fine motor training for preschool children ages 4 to 6 - ChiaYu Chen Portfolio" />
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/project.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/icon.png" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Work+Sans:400,500,600" />
+  </head>
+
+  <body>
+    <nav>
+      <a id="home" href="../#portfolio">
+        <div id="home-title">← Home</div>
+      </a>
+      <a id="next" href="#">
+<!--        <div id="home-title">Next Project →</div>-->
+      </a>
+    </nav>
+
+    <header>
+      <h1>
+        Designing a child-parent cooperative game for fine motor skills training
+      </h1>
+      <div class="progress-bar"></div>
+      <p>
+        #assistive technology #child-computer interaction
+      </p>
+      <img src="main.png" alt="PinchFun is a cooperative game for parents and children to play together to train children's fine motor skills. This picture includes two main game controller: a clip and leap motion controller.">
+      <p>
+        "Fine motor skills" are important for children to develop before six years old; early intervention and training can improve children's performance. However, the current training techniques bore children easily; also, parents find it difficult to continue at home.
+      </p>
+      <p>
+        To address these issues, we designed and built a child-parent cooperative game to support fine motor training for preschool children ages 4 to 6. I conducted the evaluation to understand how collaborative gaming can enhance parents’ involvement & children’s engagement to help improve children’s fine motor skills training effect.
+      </p>
+      
+      <h3 class="logistics">Project Logistics</h3>
+      <p>
+        <ul>
+          <li>My Role: User research, interaction design, prototyping</li>
+          <li>Team: I-Fang Wang, Dennis Wang, Radian Cheng</li>
+        </ul>
+      </p>
+      <p class="note">
+        This project was originally a lecture project that all members proposed the research subject, conducted the research, design, prototypes and made decisions and features together thoroughly. I further conducted twelve evaluation through co-design sessions to understand our product in the home context.
+      </p>
+    
+    </header>
+    
+    <section id="background">
+      <h2>
+        Background Research
+      </h2>
+      <p>
+        "Fine motor skills" are crucial for children to develop before six years old, for these skills are essential for performing self-care and academic activities. Developmental delay children can make progress through early intervention, e.g. training at institutions and the continued training at home, to improve their performance of fine motor skills; past research also suggests parental involvement can also make the training more effective. 
+      </p>
+      <p>
+        However, from the field observation in the early invention center and interviews with occupational therapists and parents, we found that...
+      </p>
+      <p>
+        <ol class="research-question">
+          <li>Current training techniques are monotone and bore children in a short while.</li>
+          <li>Parents find it a problem to continue the training at home for it takes time and effort to prepare the tool and environment for training.</li>
+        </ol>
+      </p>
+      <figure>
+        <img src="1_fine_motor_skills.png" alt="fine motor skills">
+        <figcaption>Fine motor skills are coordination of the small muscles movements involving the small and precise movement of the thumb, fingers, hand and wrist movements, which are crucial for preschool children to develop before six, for these skills are essential for performing self-care and academic activities.</figcaption>
+      </figure>
+    </section>
+    
+    <section>
+      <h2 class="research-question">So, How do we make the training more engaging and more accessible to continue at home?</h2>
+    </section>
+    
+    <section>
+      <h2>Design, Prototype & Preliminary Testing</h2>
+      <p>
+        We design the training process into an interactive game, PinchFun, to improve the training effect. PinchFun is a cooperative game that encourages training through play, which supports fine motor training for preschool children (ages four to six). Parents can collaborate with the child to achieve the game goal.
+      </p>
+      <p>
+        To entertain and attract children, PinchFun integrates the tangible controller and the virtual interactive game to optimize learning impact and gaming experience. To enhance parents involvement and make the game more immersive, the game mission is designed to be completed cooperatively.
+      </p>
+      <h3>Why and How Game is Designed</h3>
+      <p>
+        Storytelling is one of the main ways to make games engaging; we, therefore, brainstormed a theme and also a background story for the game. The theme of the game is a marine world, in which the main character Amo is visiting a friend who lives far, far away. Amo blows the bubble all the way to collect as many gifts as possible for the friend. There are a total of 20 gifts could be collected on Amo’s way.
+      </p>
+      <p>
+       <h4>The game is cooperative:</h4>
+       The child and parents collect the gifts together. The game has a two-access point controlling method to control the same game character, Amo. One player controls the dolphin’s swimming movement and the position using Leap motion controller, while the other is in charge of pinching the FSR-attached clothespin, which controls the timing and the size of the bubble blown by the dolphin to collect the gifts.
+      </p>
+      <figure>
+        <img src="2_controller.png" alt="game controller">
+        <figcaption>(a) Force-sensitive resistor (FSR) on the clothespin detects the level of pressure of fingers, and (b) Leap motion controller recognizes the hand position.</figcaption>
+      </figure>
+      <p>
+        Two players need to cooperate to collect the gift on the exact timing and the exact position — The one who controls the Leap motion has to make the dolphin swim to the right position, while the other one controls the clothespin to pinch the clothespin repeatedly and accordingly to blow the bubbles to match the size of the gift to acquire the gifts.
+      </p>
+      <h3>1st Prototype</h3>
+      <p>There are three game screens: (1) Pre-start screen (Practice mode), (2) Game screen (Playing) and (3) End-game result screen (Showing the score).</p>
+      <p>(1) At the beginning of our game, we design a pre-start screen which allows the parent and children to practice, where they can explore and test the control method. In this screen, only the main character and a gift for testing would appear. Children can explore and switch controller with their parent to get familiar with the game before they start. The Pre-start screen also has two buttons that lead to the Game screen. (2) The Game screen has two different modes: Normal and Advanced; the Normal mode consists of only normal size gifts, while Advanced consists of four to six Large size of gifts. Parents can switch from these modes to meet children’s different developmental milestones. At the end of the game, an End-game result screen would appear which allows the player to see their total score. All the gifts the player collected would appear one after another.</p>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/zRSQxUSBqmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figcaption>Video: 1st Prototype & Preliminary User Testing</figcaption>
+      </figure>
+      <figure>
+        <img src="3_main_game.png" alt="Main game screen">
+        <figcaption>The main Game screen of PinchFun is a dolphin blowing bubbles. One player is in charge of the left/right movement, while the other player is in charge of blowing the bubble.</figcaption>
+      </figure>
+      <h3>Testing & 2nd Prototype</h3>
+      <p>
+        The game was designed and iterated once based on preliminary testing sessions with three preschool children. We conduct several user evaluations in two special schools in Taipei and iterated the prototypes according to the preliminary results. In the preliminary study, children showed excitement during gameplay; they would react according to each other’s performance and stay more focused on the game than in traditional training.
+      </p>
+      <figure>
+        <img src="4_preliminary_study.png" alt="Preliminary User Testing">
+        <figcaption>Preliminary user testing. This prototype uses crocodile as the main character.</figcaption>
+      </figure>
+      <p>
+        In the preliminary studies, we also found that the children would keep pinching the clip and make the biggest bubble. However, the training is more effective when children do repetitive pinch & children are able to control the force precisely. Therefore, we did two major design iterations and developed the 2nd prototype.
+      </p>
+      <h3>Iteration: Encourage the child to do "repetitive" training & more precise pinch</h3>
+      <ol>
+        <li>
+          Encourages repetitive pinch
+          <h4>The bubble would burst as a gift be collected, therefore a child has to pinch again to blow a new bubble.</h4>
+          <p>Repetition is leveraged to encourage children to pinch and release repeatedly. Repetition is one of the primary metrics also a reliable indicator of success in the traditional training method; children are given tasks such as clamping many beans in traditional training. To encourage repetitive pinch and release, we design our bubble to disappear each time the dolphin blows a bubble to successfully acquired the gift. The audio of blowing bubble would also stop to indicate the bubble is disappeared. When the bubble disappears, children have to release and pinch again to blow a new bubble to collect the gifts ahead. Children’s fine motor skills can be trained by repetitively pinching and releasing the fingers with the precise control of the pressure of each pinch with their small muscles.</p>
+        </li>
+        <li>
+          The game maps each pinch to the game character to training a more refined control of finger
+          <h4>Gifts are in two sizes. Different size of bubble collects different size of the gift.</h4>
+          <p>
+          The clothespin with FSR detects the level of pressure of fingers and each pinch is mapped to the bubble blown by the dolphin. The clothespin employed in the game provides resistance, which trains small muscles within the palm that controls the more refined movements of the thumb and fingers. Pinching the clothespin would make the dolphin blow bubbles. The bubble blown by pinching would appear in different size according to the level of force. In addition to the visual effect, the pitch of the audio effect of blowing bubble would also change accordingly to indicate the process of bubble blowing; the pitch is higher as the level of pinch is harder.
+          </p>
+          <p>
+            This mechanism encourages children to learn force control by exploring force level and the corresponding visual and audio feedback. The gifts in the game would appear in two different sizes: Normal and Large. Normal size gifts could be collected through an at least minimum level of pinching, while the large-sized gifts require the maximum level of pinching to collect. If the gift were touched but failed to be collected (the bubble ceased to appear, or the size is wrong), a small sound effect indicating failure would appear along with the visual effect of the gift sinking to the sea bottom. Children, therefore, could explore and match the size of a bubble to the size of a gift with sensory guidance. In order to successfully acquired the different size of gifts, they have to press the clothespin with different level of forces; their more refined control of small muscles would be trained through this process.
+          </p>
+        </li>
+      </ol>
+      <figure>
+        <img src="5_bubble.png" alt="The bubbles are in different size as the player pinches.">
+        <figcaption>
+          The different force applying on the clothespin would make the dolphin blow bubbles in different sizes
+        </figcaption>
+      </figure>
+      <figure>
+        <img src="6_gift.png" alt="Two diffent size of gifts: normal and large">
+        <figcaption>
+          The gifts are in two different sizes: Normal (left) and Large (right)
+        </figcaption>
+      </figure>
+    </section>
+       
+    <section>
+      <h2>Evaluation: Understand the Game in the Home Context</h2>
+      <p>
+        To understand how the design would be in the real scenario, I further conducted the evaluation at the participant’s home to understand the game in the home context.
+      </p>
+      <h3>Through the evaluation, we want to know...</h3>
+      <ul class="research-question">
+        <li>Can these game mechanisms increase engagement in fine motor skill training?</li>
+        <li>Can these game mechanisms encourage children to repetitive pinch their fingers and precisely control the refined force of small muscles?</li>
+        <li>How does in-home co-play training with these game mechanism affect children and parents' engagement?</li>
+      </ul>
+      
+      <h3>Participants</h3>
+      <p>12 child-parent co-play & evaluation sessions</p>
+      <p>13 families -- 4 boys / 11 girls + their parent (some sessions include their older or younger siblings)</p>
+      <p>The study is conducted at their home @ Taipei City & New Taipei City.</p>
+      
+      <h3>Evaluation Process</h3>
+      
+      <h4>Activity 0: Introduction</h4>
+      <p>When meeting the children, I briefly introduced myself and have parents and children consent on the data use and how their opinions and drawings would contribute to this research. The design goals were introduced: designing a game to train the finger force of 4 to 6 years old children just like them; I also explain the consequence of the inability of controlling the finger force or weak finger leading to difficulties in writing and daily activities.</p>
+      <figure>
+        <img src="7_1_consent_introduction.png" alt="Evaluation activity 1 includes consent and introduction to activity goal">
+        <figcaption>Activity 0: Consent and Introduction. The consent form annotated with Mandarin Phonetic Symbols (Zhuyin).</figcaption>
+      </figure>
+      
+      <h4>Activity 1: Warmup and Gameplay</h4>
+      <p>
+        The study is designed constructively in order to make it easier for younger children to follow. Throughout the design process, the adult researcher asks questions based on their conversation and drawings to encourage them to express their thoughts in detail. Pastels, color markers, A4-sized, and 8K-sized papers were provided.
+      </p>
+      <p>
+        The session starts with a warm-up activity which children and a parent took turns to share their favorite toys by describing and drawing the toy. Then we asked the children if they would like to play the game. We recapped our design goal again before we introduced the PinchFun system by asking them to try applying a force on the clothespin in the practice theme of the game.
+      </p>
+      <p>
+        After the children pressed the clothespin to blow the bubble, we asked the parent to join the game to swim with the children, i.e. to control the Leap Motion. After brief practicing to collect the gift, we told the background story of dolphin collecting gifts and visiting the friend and then started the game in normal mode. After several rounds of play, we asked the children to switch position which they swim (Leap Motion) and parent blow the bubble (clothespin). After several rounds of play, we then asked them if they want to play the harder level which large gifts would appear. If they said yes, we would then let them play the advanced mode.
+      </p>
+      <figure>
+        <img src="7_2_warmup_gameplay.png" alt="Evaluation activity 2 includes warmup and gameplay">
+        <figcaption>Activity 1: Warmup and Gameplay.</figcaption>
+      </figure>
+      
+      <h4>Activity 2: Evaluation and Co-design</h4>
+      <p>
+        After the gameplay session, we then proceed with a drawing session to evaluate PinchFun. We ask the parent and the children to draw something about the game, including their likes and dislikes about the game. We also asked them to draw themselves playing the game and describe what they’ve done in the game, to understand their thoughts about the game and how they enjoy the game.
+      </p>
+      <p>
+        We then asked them how they would change the game and asked them to draw accordingly, before we primed them to think if they wanted to create a new game to train fine motor skills and asked them to explain how to play the new game they came up with. After the parent and children provided their opinions, we asked them to draw a mixed idea on a big paper and explain their idea. Ideas were physically rearranged to help them discuss how their ideas can be integrated.
+      </p>
+      <p>Some of the questions asked are...</p>
+      <ul>
+        <li>
+          What element do you remember from the game?
+          <p>Do you remember / like the dolphin / the sea / the seaweed / the rock / the small gift / the big gift? What did you do in the game?</p>
+        </li>
+        <li>
+          What do you like about the game? What don’t you like about the game?
+          <p>What do you want to add to this game? If you don’t like ____, what do you want to replace it with?</p>
+        </li>
+        <li>
+          If you could change something about this game, what would it be?
+        </li>
+        <li>
+          If you could build your own fine motor training game, what would it be?
+        </li>
+        <li>
+          What would you do if you have this game in your home?
+          <p>Where do you want to put this game at? When are you going to play this?</p>
+          <p>Whom do you want to play this game with? How do you play with your brother/sister/mom/dad/friends in this game? What would you do? What would they do?</p>
+        </li>
+        <li>
+          What did we do today? Why are we doing these activities?
+          <p>Why are we drawing/playing games? What’s the purpose of this game?</p>
+        </li>
+      </ul>
+      <figure>
+        <img src="7_3_evaluation_codesign.png" alt="Evaluation activity 3 includes evaluation and co-design sessions">
+        <figcaption>Activity 2: Evaluation and Co-design</figcaption>
+      </figure>
+      <p>
+        Besides the observation by the researcher, I also interviewed the children several context-related questions and evaluated the fun and engagement using the Fun Toolkit (J. C. Read & MacFarlane, 2006) including Smileyometer to measure reported fun and Again-Again table to measure the engagement in the game and each design activity quantitatively; we also primed them to explain the reason for the answers to each question.
+      </p>
+      <p>The questions in the again-again table include...</p>
+      <ul>
+        <li>Draw and share your own toy again? (Yes/No/Maybe)</li>
+        <li>Play this game again? (Yes/No/Maybe)</li>
+        <li>Play this game with mom again? (Yes/No/Maybe)</li>
+        <li>Help the dolphin to blow bubbles and collect the gifts again? (Yes/No/Maybe)</li>
+        <li>Help the dolphin to swim around again? (Yes/No/Maybe)</li>
+        <li>Draw your own game with mom again? (Yes/No/Maybe)</li>
+      </ul>
+      <p>
+        At the end of the design activities, we ask them again if they remember the design goal. When they finished all the activities we would then reward them with a certificate with their name and parent’s name on and a set of stickers. While children were choosing stickers from the sticker sets, we would interview the parent about their current training techniques and their opinions on the game and the co-design activities.
+      </p>
+      <figure>
+        <img src="7_3_evaluation_codesign_2.png" alt="Evaluation activity 3 includes evaluation and co-design sessions">
+        <figcaption>Activity 2: Evaluation and Co-design</figcaption>
+      </figure>
+      <h3>Adopt the co-design methodology</h3>
+      <p>
+        For our study, we chose to adopt the co-design methodology along with co-play among each of the thirteen child-parent groups, to understand how children and their parents think about PinchFun.
+      </p>
+      <p>
+        Participatory Design (PD) a method to bring users and designers together to co-create new technologies. Children can join the design process as an equal stakeholder and co-work with the adults in the design team to share their opinions and their expert knowledge of "being kids". Creative PD techniques have been shown to elicit expressive ideas which were valuable for design.
+      </p>
+      <p>
+        <b>When children provide their design ideas, PD makes it possible to understand their feedback toward technology.</b> Previous research also suggested that parent-child co-design can give us a chance to observe families engaged in the process of co-design, which reveals new insights into the relationships, tensions, and motivations of families, helping us to understand better how the technology fits in the at- home training context (Yip et al., 2016).
+      </p>
+      <figure>
+        <img src="8_participants.png" alt="blurred image of study sessions, including 13 families who participated in this study">
+        <figcaption>13 families were studies in 12 sessions.</figcaption>
+      </figure>
+    </section>
+       
+    <section>
+      <h2>Research Findings & Insights</h2>
+      <p>
+        All sessions were video and audio recorded. For data analysis, the researcher recursively discusses emergent theme with the research team. Using these emergent themes, we would repeatedly re-watch the recorded videos of each session and pull out examples of behaviors and illustrate each theme. We also went through the drawings from the co-design session and coded the findings to discuss their likes, dislikes and design ideas in common. Using these examples, we conducted a collaborative affinity diagramming session to cluster examples into cross-cutting themes.
+      </p>
+      <h3>Children’s Engagement</h3>
+      Most children showed their interest in playing PinchFun again and again. Twelve of them offered an affirmative answer when being asked "Do you want to play this game again? ‘Yes,’ ‘No’ or ‘I don’t know’?" from the question in Again-Again Table. Also, from the co-design drawing sessions, we saw child participants’ engagement in this game as they can recall and repeat the elements in PinchFun well and actively proposed many ideas to the game.
+      <p class="quote">
+        Child: "My fingers are sore, but I want to play again," <br/>
+        (From study session 10th)
+      </p>
+      <h3>Child-Parent Joint Engagement</h3>
+      <p><b>A mutual engagement between the child and parent</b> was observed in the gameplay sessions. In the gameplay activity, we saw parent act as a collaborator instead of an overseer in the game-based training. Sharing the same goal enabled conversation during cooperation. For example, children and parent would take turn guiding each other to better collaborate. Some children and parents also discussed the game strategies to earn more gifts.</p>
+      <p class="quote">
+        Parent (Leap motion): "… Don’t acquire the gift yet. Do not press the clip until I say so."<br/>
+        Child (clothespin): "I would release the clip when I collect the gift. And I’ll keep the clip pressed and wait for the moment to come"
+      </p>
+      <p>
+        They would also encourage each other right before specific movement should be made, e.g. pinch the clothespin, or right after they didn’t do the movement precisely and missed the gift. They also celebrated their success when they reached a higher score and comfort each other when they get a relatively low score.
+      </p>
+      <p class="quote">
+        (After the game) <br />
+        Child: "Wow! I was so good at this! You were so good at this. We are SO GREAT!"
+      </p>
+      <p>
+        When the parents were interviewed about the cooperative gameplay, most of them think it <em>"a nice thing to achieve something with the children"</em>. As for the children, the overall feedback from the children was that they enjoyed playing the game with their parents; all of them wanted to play the game with their mom again. A child participant drew themselves smiling while playing the game.
+      </p>
+      <p class="quote">
+        Parent: "It’s really nice to do something together. We have overcome something together."
+      </p>
+      <figure>
+        <img src="9_children_pic_smiling.png" alt="A child participant drew themselves smiling while playing the game">
+        <figcaption>
+          A child participant drew themselves smiling while playing the game. (From study session 3rd)
+        </figcaption>
+      </figure>
+      
+      <h3>Fine motor skill training : Learning the repetitive pinch-and-release mechanism</h3>
+      <p>
+        Children were able to learn the pinch and release movement in their first or second round of gameplay. Half of them don’t understand it for their first time playing the game. They were confused and a bit frustrated, for they pinched the clothespin hard, but the bubble didn’t show on the screen. Some adult participants gave their child some hints: "Why not try to release and pinch again?" , alternatively a more direct guidance to blow a bubble: "Release and pinch again. Your bubble has disappeared. You have to do it again to blow a new bubble."
+      </p>
+      <p>
+        With or without these control hints, all the children were able to learn the pinch-release mechanism and they would follow this mechanism by the end of the second round — They pinch and release again and again (And Yes! that’s our design goal to have them repeat this!). Their strategy of blowing a new bubble differs. Some of them released their pinch right after they collected a gift and re-pinched when they saw a new gift approaching; while the others keep pinching the clothespin and when they saw a gift approaching they immediately released and re-pinched.
+      </p>
+      
+      <h3>Increased engagement through storytelling</h3>
+      <p>
+        From the co-design sessions, we found that storytelling through game enhanced the engagement in the training process. Narrative game elements in the game such as gifts and the mission of collecting gifts for the friend provided a background story for parents and children to tell new stories.
+      </p>
+      <p>
+        Creating stories made them stay focused on the game. For example, in the 13th study session, when the child asked what was inside the gift, her mom replied, <em>"Let’s play again to see what’s inside!"</em> before the child agreed to play again immediately.
+      </p>
+      <p>
+        In another case in the 1st study session, when the child was distracted and walked away, her mom dressed her up with a fairy outfit and told her to <em>"swim back to the ocean again and collect more gifts with her magic power"</em>, she ran back to the game immediately and chanted each time when she collected a gift.
+      </p>
+      <p>
+        Apart from enhancing the engagement, storytelling was observed to be a way to lessen the frustration. For example, in the 4th study session, after a game with a very low score, the parent comforts the child by telling her <em>"Maybe the dolphin only have one friend. That (collecting four gifts) is enough for them!"</em>. The re-interpreted story did affect the sense of achievement and turned the failure into a fulfillment of the mission.
+      </p>
+      <p>
+        Storytelling might also make the repetitive task more engaging by adding various characters, scenes, predefined stories and other narrative elements in various stages. Narrative elements provide a space for them to create new stories. Children and parents can tell different stories every time they play this game, just like they would read the same storybook repetitively by telling the story in different ways.
+      </p>
+      <p class="quote">
+        Children have their own way to create meaning, explore and play with the game; they are “competent interpreters of their everyday worlds” and they’re capable of creating their own rules for successful engagement through play (Danby & Farrell, 2005).
+      </p>
+      
+      <h3>Sense of Achievement & Goal-setting</h3>
+      <p>
+        In the game, the gifts are in two different sizes: the normal one and the big one. As the game ends, the End-game result screen would show the total gifts one after another; the gifts in the end-game screen are also in two different sizes, indicating the size of the gifts they collected. Our intentions of designing the gift in different sizes were to support the training of force control of the small muscles. We saw the sense of achievement and goal-setting behavior in children, where they reacted in various way at the end of the game. Half of the child participants shouted "wow!" and their eyes lit up at the sight of the large size gifts in the End-game result screen.
+      </p>
+      <p class="quote">
+        Parent: "Are you tired? Are your fingers sore?" <br/>
+        Child: "Yeah." (still holding her dolphin pin)  <br/>
+        Parent: "Do you want to take a rest?"
+        Child: "I want to play again. I want to collect 20 gifts. I would like to challenge myself." <br/>
+        (From study session 13th)
+      </p>
+      
+      <h3>Supporting multiplayer and individual play in the home context</h3>
+      <p>
+        Our studies found that tensions between family members would occur when applying physical training at home. Some tensions were observed during our evaluation sessions in the home context.
+      </p>
+      <p>
+        For example, when there is more than one child in a family, they would fight over playing with their mom.
+      </p>
+      <p class="quote">
+        (From study session 1) <br/>
+        The sister volunteered to control the clothespin first. She invited her mom to join her and Mom agreed. Meanwhile, her brother shouted, "I want to play too!" <br/>
+        Mom replied, "You two can switch to play the game. Let’s have your sister play the first round, and it will be your turn to play." The brother immediately ran back to his playroom and glared at his mother and sister behind the door crack.
+      </p>
+      <p class="quote">
+        (From study session 9) <br/>
+        The sister was playing, the brother who watched his sibling playing also made a repetitive pinch-release gesture (a-ok gesture) even when he was not holding any clothespin on his fingers. <br>
+      </p>
+      <p>
+        In some cases, parents commented that they sometimes have limited time to accompany the child.
+      </p>
+      <p class="quote">
+        Researcher: "Whom do you want to play this game with?" <br />
+        Child: "Mommy (Daddy)… but Mom (or Dad) doesn’t have time to play with me" <br/>
+        (From two study sessions)
+      </p>
+      <p>
+        To make the game design better support at-home training, a dynamic home context should be considered. To enable a different number of players playing together, in the future design, flexible game design to support multi-player and individual play may be considered, so that the training can be done with or without parents and other siblings. This may help dissolve the tension between siblings who fight over the game and the tension between parent’s limited time and the companionship. 
+      </p>
+      <p>
+        Two children shared their ideas of “playing with an imaginary friend”; this also edified us to consider exploring the design of a virtual companion, e.g. a bot, to support individual play in the game-based physical training. A further observation should be done in the playing alone context since all our research was done with researchers or parents’ company.
+      </p>
+    </section>
+       
+    <section>
+      <h2>Output and Impact</h2>
+      <ol>
+        <li>
+          We were awarded ‘Winner’ in ACM SIGCHI 2016 Student Game Competition — Games for a purpose. We host a demo booth for 3 days to share our game design and research findings to CHI participants. Our team member, Dennis, also did a <a href="https://www.youtube.com/watch?v=ToEe0hTAWnI&feature=youtu.be&t=727" target="_blank">presentation</a> to CHI participants. We also authored a <a href="https://dl.acm.org/citation.cfm?id=2890371" target="_blank">CHI extended abstract</a> to share our project.
+        </li>
+        <li>
+          We shared and discussed our research insights and suggestions on how to better introduce technologies to child development training with the early invention centers and occupational therapists.
+        </li>
+        <li>AAPD Press article: <a href="https://medium.com/as-a-product-designer/c993c9395df2" target="_blank">AAPD 學生 UX 專案專訪（三）Pinch Fun 協助遲緩兒進行精細動作訓練</a></li>
+        <li>
+          NCCU Press article: <a href="https://www.nccu.edu.tw/en/news/PinchFun-A-fun-novel-environment-for-developing-motor-skills-17012326" target="_blank">PinchFun: A fun, novel environment for developing motor skills</a>
+        </li>
+      </ol>
+      <figure>
+        <img src="10_demo_booth_at_CHI.png" alt="ACM CHI 2016 Demo booth. Me and a participant.">
+        <figcaption>ACM CHI 2016 Student Game Competition in San Jose, California. I was demonstrating the game to a participant from Canada.</figcaption>
+      </figure>
+    </section>
+       
+    <section>
+      <h2>Limitation & Future work</h2>
+      <p>
+        The study is limited in that we only evaluated our design during twelve two-hour sessions, because of the time & budget limit. Future work remains to understand if this game-based design can enhance engagement in training in a long-term; also, the long-term occupational evaluation needs to be conducted to examine the effect of this therapy.
+      </p>
+      <p>
+        Besides, the design currently focused on strengthening the small muscles of hands and using pads of thumb and index finger. If the project still goes on, the future design should incorporate more motor skills.
+      </p>
+      <p>
+        Our study has seen enhanced engagement in integrating this fine motor skills training with a cooperative game, and we’ve gained many creative ideas from children and parents, providing an opportunity for us to explore how other fine motor skills training may transform into game-based cooperative physical training for future work!
+      </p>
+    </section>
+        
+    <footer>
+      <div class="contact">
+        <a href="mailto:chiayuchentw@gmail.com">
+          chiayuchentw@gmail.com
+        </a>
+      </div>
+      <div class="contact">
+        <a href="tel:+886922262237">
+          +886 922 262237
+        </a>
+      </div>
+      <div id="signature">
+        Designed and Built with ❤️ by ChiaYu. Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages.</a>
+      </div>
+    </footer>
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+<!--    <script type="text/javascript" src="js/index.js"></script>-->
+    <script type="text/javascript" src="../js/project.js"></script>
+  </body>
+</html>

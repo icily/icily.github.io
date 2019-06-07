@@ -1,0 +1,133 @@
+.progress-bar { 
+  background: #f80;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 6px;
+  z-index: 3;
+}
+
+nav {
+  padding-top: 1.27em !important;
+}
+
+nav #home-title {
+  left: 0px !important;
+  font-size: 16px !important;
+}
+
+nav a:hover {
+  color: #f80 !important;
+}
+
+nav #next {
+  display: block;
+  float: right;
+  padding: 18px 1%;
+  text-decoration: none;
+  color: #000;
+}
+
+.logistics {
+  padding-top: 1em;
+}
+
+.note {
+  font-size: 0.82em;
+  color: #888;
+  border-left: .3em solid #888;
+  padding-left: 10px;
+}
+
+h2 {
+  line-height: 1.3em;
+}
+
+.research-question {
+  color: #f80;
+  font-weight: 500;
+}
+
+.quote {
+  color: #f80;
+  padding-left: 12px;
+  border-left: 3px #f80 solid;
+}
+
+section {
+  width: 86%;
+  margin: auto;
+  position: relative;
+  padding: 4% 0 1em 0;
+}
+
+body {
+  font-size: 16px !important;
+  line-height: 1.65em !important;
+}
+
+section p {
+  font-size: 16px;
+  line-height: 1.65em;
+  list-style: none;
+}
+
+section a:hover {
+  border-bottom: 2px solid #333;
+  color: #333;
+  transition: color .2s ease-out, border .1s ease-out;
+}
+
+img,
+iframe {
+  width: 100%;
+}
+
+figure {
+  margin: 1.45em 0;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.45rem;
+  color: #888;
+}
+
+@media (min-width: 48em) { 
+  header p {
+    width: 100% !important;
+  }
+  
+  nav #home-title {
+    font-size: 18px !important;
+    top: 0vw !important;
+    max-width: 100% !important;
+    line-height: 1 !important;
+  }
+  
+  nav #home {
+    padding: 0.5em !important;
+  }
+  
+  body {
+    font-size: 20px !important;
+    line-height: 1.7em !important;
+  }
+  
+  section {
+    margin: auto;
+    padding: 4vw 0% 1em 0%;
+    max-width: 58%;
+  }
+  
+  section p {
+    font-size: 20px;
+    line-height: 1.7em;
+    max-width: 60em;
+  }
+  
+  figure {
+    margin: 1.2em 12vw;
+  }
+}

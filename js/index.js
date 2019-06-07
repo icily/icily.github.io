@@ -28,7 +28,6 @@ $(".close").on("click", function(){
   $(".modal-popup").css("display", "none");
 });
 
-
 //$(".modal-mask").on("click", function(){
 //  $(".modal-mask").css("display", "none");
 //  $(".modal-popup").css("display", "none");
