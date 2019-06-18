@@ -92,6 +92,10 @@ figure {
   margin: 1.45em 0;
 }
 
+.mobile-app {
+  margin: 2% 25%
+}
+
 figcaption {
   text-align: center;
   font-size: 0.9rem;
@@ -134,5 +138,9 @@ figcaption {
   
   figure {
     margin: 1.2em 12vw;
+  }
+    
+  .mobile-app {
+    margin: 2% 35%
   }
 }
