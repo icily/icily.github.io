@@ -7,6 +7,11 @@
   z-index: 3;
 }
 
+li {
+  margin-bottom: .35em;
+  margin-top: .35em;
+}
+
 nav {
   padding-top: 1.27em !important;
 }
