@@ -41,19 +41,21 @@
         <div id="home-title">← Home</div>
       </a>
       <a id="next" href="../music">
-        <div id="home-title">Next Project: Music →</div>
+        <div id="home-title">Next: Music APP →</div>
       </a>
     </nav>
 
     <header>
       <h1>
-        Designing a child-parent cooperative game for fine motor skills training
+        PinchFun: Designing a child-parent cooperative game for fine motor skills training
       </h1>
       <div class="progress-bar"></div>
       <p>
         #assistive technology #child-computer interaction
       </p>
-      <img src="main.png" alt="PinchFun is a cooperative game for parents and children to play together to train children's fine motor skills. This picture includes two main game controller: a clip and leap motion controller.">
+      <figure class="main">
+        <img src="main.png" alt="PinchFun is a cooperative game for parents and children to play together to train children's fine motor skills. This picture includes two main game controller: a clip and leap motion controller.">
+      </figure>
       <p>
         "Fine motor skills" are important for children to develop before six years old; early intervention and training can improve children's performance. However, the current training techniques bore children easily; also, parents find it difficult to continue at home.
       </p>
@@ -101,20 +103,32 @@
     </section>
     
     <section>
-      <h2>Design, Prototype & Preliminary Testing</h2>
+      <h2>Project Outcome</h2>
       <p>
-        We design the training process into an interactive game, PinchFun, to improve the training effect. PinchFun is a cooperative game that encourages training through play, which supports fine motor training for preschool children (ages four to six). Parents can collaborate with the child to achieve the game goal.
+        We design the training process into an interactive game, PinchFun, to improve the training effect of fine motor skills. This game is designed based on several idea testing and iterations.
+      </p>
+      <p>
+        PinchFun is a cooperative game that encourages training through play, which supports fine motor training for preschool children (ages four to six). Parents can collaborate with the child to achieve the game goal.
       </p>
       <p>
         To entertain and attract children, PinchFun integrates the tangible controller and the virtual interactive game to optimize learning impact and gaming experience. To enhance parents involvement and make the game more immersive, the game mission is designed to be completed cooperatively.
       </p>
-      <h3>Why and How Game is Designed</h3>
+      <h3>Hi-Fidelity Prototype</h3>
+      <figure>
+        <iframe src="https://www.youtube.com/embed/vQqFJ7s5JnU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <figcaption>Video: The hi-fidelity Prototype casting the latest design of PinchFun</figcaption>
+      </figure>
+      <h3>Narrative</h3>
       <p>
         Storytelling is one of the main ways to make games engaging; we, therefore, brainstormed a theme and also a background story for the game. The theme of the game is a marine world, in which the main character Amo is visiting a friend who lives far, far away. Amo blows the bubble all the way to collect as many gifts as possible for the friend. There are a total of 20 gifts could be collected on Amo’s way.
       </p>
+      <h3>Cooperative</h3>
       <p>
-       <h4>The game is cooperative:</h4>
-       The child and parents collect the gifts together. The game has a two-access point controlling method to control the same game character, Amo. One player controls the dolphin’s swimming movement and the position using Leap motion controller, while the other is in charge of pinching the FSR-attached clothespin, which controls the timing and the size of the bubble blown by the dolphin to collect the gifts.
+        The child and parents collect the gifts together. The game has a two-access point controlling method to control the same game character, Amo. One player controls the dolphin’s swimming movement and the position using Leap motion controller, while the other is in charge of pinching the FSR-attached clothespin, which controls the timing and the size of the bubble blown by the dolphin to collect the gifts. This design aims to transform the role of parents from advisor to teammate and to provide an easier setup to continue the training at home.
+      </p>
+      <h3>Encourage Repetitive Pinch and Release</h3>
+      <p> 
+        "Repetition" is one of the primary metrics also a reliable indicator of success in the traditional training method. To encourage children to pinch and release repeatedly, we made a design that the bubble would burst each time when the dolphin successfully acquired the gift. The audio of blowing bubble would also stop to indicate the bubble is disappeared. When the bubble disappears, children have to release and pinch again to blow a new bubble to collect the gifts ahead. Children’s fine motor skills can be trained by repetitively pinching and releasing the fingers with the precise control of the pressure of each pinch with their small muscles.
       </p>
       <figure>
         <img src="2_controller.png" alt="game controller">
@@ -123,38 +137,75 @@
       <p>
         Two players need to cooperate to collect the gift on the exact timing and the exact position — The one who controls the Leap motion has to make the dolphin swim to the right position, while the other one controls the clothespin to pinch the clothespin repeatedly and accordingly to blow the bubbles to match the size of the gift to acquire the gifts.
       </p>
-      <h3>1st Prototype</h3>
-      <p>There are three game screens: (1) Pre-start screen (Practice mode), (2) Game screen (Playing) and (3) End-game result screen (Showing the score).</p>
-      <p>(1) At the beginning of our game, we design a pre-start screen which allows the parent and children to practice, where they can explore and test the control method. In this screen, only the main character and a gift for testing would appear. Children can explore and switch controller with their parent to get familiar with the game before they start. The Pre-start screen also has two buttons that lead to the Game screen. (2) The Game screen has two different modes: Normal and Advanced; the Normal mode consists of only normal size gifts, while Advanced consists of four to six Large size of gifts. Parents can switch from these modes to meet children’s different developmental milestones. At the end of the game, an End-game result screen would appear which allows the player to see their total score. All the gifts the player collected would appear one after another.</p>
-      <figure>
-        <iframe src="https://www.youtube.com/embed/zRSQxUSBqmg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <figcaption>Video: 1st Prototype & Preliminary User Testing</figcaption>
-      </figure>
       <figure>
         <img src="3_main_game.png" alt="Main game screen">
         <figcaption>The main Game screen of PinchFun is a dolphin blowing bubbles. One player is in charge of the left/right movement, while the other player is in charge of blowing the bubble.</figcaption>
       </figure>
-      <h3>Testing & 2nd Prototype</h3>
+    </section>
+    <section>
+      <h2 class="research-question">
+        How did we get here?
+      </h2>
+      <h2 class="research-question">
+        "Ideate, Build prototypes, Test, and Fail; Revisited the problem, Build new prototypes, and Validate again"
+      </h2>
+      <h2>Prototyping, Testing, and again</h2>
+      <p>At the beginning, we brainstormed several design concepts, in which we chose to adopt a common tool of traiditional training of fine motor skills -- <b>the clothespin</b>.
+      </p>
+      <h3>Lo-fi Prototyping and Testing</h3>
+      <p>We built lo-fi prototypes using basic circuits, Arduino, and Processing on iPad, and then tested these concept with the children from two special schools.</p>
+      <p>However, for the very first version, which a child has to hold the eletric element with the clothespin to play with the digital story book, we found that although the children enjoyed the game a lot, they tend to press the screen directly with their fingers.</p>
+      <figure>
+        <img src="clip-prototype.png" alt="Preliminary idea testing. iPad and game elements.">
+        <figcaption>The very first prototype was a digital story book, which adopted clothespin, eletric capacity elements, and iPad.</figcaption>
+      </figure>
+      <p>We then brainstormed again and came up with a new idea that could elicit the interaction with the clothespin solely. As the children pinch harder, there would be a light and sound effect. This prototype enabled the child to explore how different pressure led to different feedbacks. The children loved the interaction and showed excitement, however, they could not understand why to press the clothespin and got bored in a short while.</p>
+      <figure>
+        <img src="preliminary_testing.gif" alt="Preliminary User Testing">
+        <img src="4_preliminary_study.png" alt="Preliminary User Testing">
+        <figcaption>Preliminary concept testing. This prototype uses crocodile on the clothepin with sound and lights effect.</figcaption>
+      </figure>  
+      <h3>Building Mid-Fi Prototype & Testing again</h3>
       <p>
-        The game was designed and iterated once based on preliminary testing sessions with three preschool children. We conduct several user evaluations in two special schools in Taipei and iterated the prototypes according to the preliminary results. In the preliminary study, children showed excitement during gameplay; they would react according to each other’s performance and stay more focused on the game than in traditional training.
+        We then revisited the design objectives -- A better design is needed to encourage the repetitive and more precise pinch. Also, considering the at-home training context, we tried to include the parents in the design.
+      </p>
+      <p>
+        We brainstormed a more completed game flow, and built a mid-fi prototype using Unity3D, basic circuits, and Arduino. In this prototype, there are two players in the game, both using hands and fingers to control the main character; they need to cooperate to play the game. We also added some narrative elements in the game to lead the player to do the pinch naturally.
       </p>
       <figure>
-        <img src="4_preliminary_study.png" alt="Preliminary User Testing">
-        <figcaption>Preliminary user testing. This prototype uses crocodile as the main character.</figcaption>
-      </figure>
+          <iframe src="https://www.youtube.com/embed/zRSQxUSBqmg?start=11" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <figcaption>Video: Mid-Fi Prototype</figcaption>
+        </figure>
       <p>
-        In the preliminary studies, we also found that the children would keep pinching the clip and make the biggest bubble. However, the training is more effective when children do repetitive pinch & children are able to control the force precisely. Therefore, we did two major design iterations and developed the 2nd prototype.
+        The game was designed and iterated once based on preliminary testing sessions with three preschool children and guerilla testing at Taipei Zoo. We conduct several user evaluations in two special schools in Taipei. In the preliminary study, children showed excitement during gameplay; they would react according to each other’s performance and stay more focused on the game than in traditional training.
       </p>
-      <h3>Iteration: Encourage the child to do "repetitive" training & more precise pinch</h3>
+      <p>
+        However, from the mid-fi prototype testing, we found that the children would keep pinching the clip & they tend to press very hard to make the biggest bubble. <span class="research-question">However, the training is more effective when children do repetitive pinch & children are able to control the force precisely.</span> Accordingly, we did two major design iterations and developed the 2nd prototype.
+      </p>
+      <h3>Iteration: Encourage the child to do "repetitive" & precise pinch</h3>
       <ol>
         <li>
           Encourages repetitive pinch
-          <h4>The bubble would burst as a gift be collected, therefore a child has to pinch again to blow a new bubble.</h4>
-          <p>Repetition is leveraged to encourage children to pinch and release repeatedly. Repetition is one of the primary metrics also a reliable indicator of success in the traditional training method; children are given tasks such as clamping many beans in traditional training. To encourage repetitive pinch and release, we design our bubble to disappear each time the dolphin blows a bubble to successfully acquired the gift. The audio of blowing bubble would also stop to indicate the bubble is disappeared. When the bubble disappears, children have to release and pinch again to blow a new bubble to collect the gifts ahead. Children’s fine motor skills can be trained by repetitively pinching and releasing the fingers with the precise control of the pressure of each pinch with their small muscles.</p>
+          <p>
+            <span class="research-question">The bubble would burst as a gift be collected, therefore a child has to pinch again to blow a new bubble.</span>
+          </p>
+          <figure>
+            <img src="repetitive_pinch.gif" alt="The bubble disappeared as the dolphin collects the gift">
+            <figcaption>
+              The bubble would disappear when the dolphin collects the gift; to collect the gifts ahead, the children has to pinch again to blow a new bubble, which encourages the repetitive pinch. 
+            </figcaption>
+          </figure>
+          <p>Repetition is leveraged to encourage children to pinch and release repeatedly. Repetition is one of the primary metrics also a reliable indicator of success in the traditional training method; children are given tasks such as clamping many beans in traditional training. To encourage repetitive pinch and release, we design our bubble to disappear each time the dolphin blows a bubble to successfully acquired the gift. The audio of blowing bubble would also stop to indicate the bubble is disappeared. 
+          </p>
+          <p>When the bubble disappears, children have to release and pinch again to blow a new bubble to collect the gifts ahead. Children’s fine motor skills can be trained by repetitively pinching and releasing the fingers with the precise control of the pressure of each pinch with their small muscles.</p>
         </li>
         <li>
           The game maps each pinch to the game character to training a more refined control of finger
-          <h4>Gifts are in two sizes. Different size of bubble collects different size of the gift.</h4>
+          <p>
+            <span class="research-question">
+            Gifts are in two sizes. Different size of bubble collects different size of the gift.
+            </span>
+          </p>
           <p>
           The clothespin with FSR detects the level of pressure of fingers and each pinch is mapped to the bubble blown by the dolphin. The clothespin employed in the game provides resistance, which trains small muscles within the palm that controls the more refined movements of the thumb and fingers. Pinching the clothespin would make the dolphin blow bubbles. The bubble blown by pinching would appear in different size according to the level of force. In addition to the visual effect, the pitch of the audio effect of blowing bubble would also change accordingly to indicate the process of bubble blowing; the pitch is higher as the level of pinch is harder.
           </p>

@@ -83,8 +83,13 @@ section a:hover {
   transition: color .2s ease-out, border .1s ease-out;
 }
 
-img,
+img {
+  width: 100%;
+  height: auto;
+}
+
 iframe {
+  min-height: 300px;
   width: 100%;
 }
 
@@ -142,5 +147,10 @@ figcaption {
     
   .mobile-app {
     margin: 2% 35%
+  }
+  
+  
+  .main {
+    margin: 0 15%;
   }
 }
