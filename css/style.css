@@ -592,6 +592,7 @@ footer #signature {
   padding: 10px 5.5%;
   border-radius: .38em;
   overflow: auto;
+  line-height: 1.2em;
 }
 
 /* The Close Button */
@@ -614,23 +615,45 @@ footer #signature {
 .modal-header {
   font-size: 19.5px;
   width: 90%;
+  margin: 0 5%;
   line-height: 1.5em;
   font-weight: 500;
+  text-align: center;
 }
 
 .modal-role {
   font-size: 16px;
   color: #aaa;
+  margin: .3em 0;
 }
 
 .modal-body {
   font-size: 16px;
 }
 
-.modal-image {
-  text-align: center;
-  width: 200px;
+.modal-main-image {
   height: auto;
+  width: 100%;
+}
+
+.modal-image {
+  height: auto;
+  width: 100%;
+}
+
+.modal-image-small {
+  width: 50%;
+  height: auto;
+}
+
+.modal-popup figure {
+  text-align: center;
+}
+
+.modal-popup figcaption {
+  font-size: .8em;
+  line-height: 1.4em;
+  color: #999;
 }
 
 /*  --- */
@@ -823,6 +846,11 @@ footer #signature {
   
   .modal-popup{ 
     margin: 20vh auto 20px auto;
+  }
+  
+  .modal-header {
+    width: 100%;
+    margin: 0;
   }
 
   
