@@ -267,6 +267,12 @@ header h1 {
   right: 5px;
 }
 
+.cubo {
+  background-color: #E5F7F5;
+  fill: #E5F7F5;
+  background-image: linear-gradient(-180deg, #E5F7F5 74%, #D3F5F1 100%);
+}
+
 .pinchfun {
   background-color: #fcf9f0;
   fill: #fcf9f0;
@@ -387,13 +393,14 @@ header h1 {
   width: 86%;
   margin: auto;
   position: relative;
-  padding: 4% 0 1em 0;
+  padding: 1em 0 1em 0;
 }
 
 h2 {
   font-size: 28px;
   font-weight: 600;
   color: #555;
+  padding-top: 1.4em;
 }
 
 #about-me p, #about-me ul,
@@ -903,7 +910,7 @@ footer #signature {
   #about-me,
   #contact {
     margin: auto;
-    padding: 4vw 0% 1em 0%;
+    padding: 1em 0% 1em 0%;
     max-width: 58%;
   }
   
