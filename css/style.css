@@ -393,7 +393,7 @@ header h1 {
   width: 86%;
   margin: auto;
   position: relative;
-  padding: 1em 0 1em 0;
+  padding: 5em 0 3em 0;
 }
 
 h2 {
@@ -923,11 +923,11 @@ footer #signature {
   #about-container {
     position: relative;
     margin: auto;
-    max-width: 58%;
+    max-width: 100%;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 2vw;
+    grid-gap: 5vw;
   }
   
   #about-container h4 {
